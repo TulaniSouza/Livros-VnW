@@ -1,0 +1,24 @@
+.contatos{
+    display:flex;
+    justify-content: space-around;
+    background-color: #005695;
+    align-items: center;
+    height: 15vh;
+    color:#fff;
+
+    section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 20%;
+    }
+
+}
+.copyright{
+    background-color: #232020;
+    height: 8vh;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

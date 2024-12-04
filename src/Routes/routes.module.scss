@@ -1,0 +1,151 @@
+@import "../globalStyle/variables";
+@import "../globalStyle/mixins";
+
+.Container {
+    display: flex;
+    background: $background;
+    width: 99, 9vw;
+
+}
+
+.logo {
+    @include header-align($justify: space-between, $align: center);
+    font-size: 1.2rem;
+    color: $primary-color;
+    width: 20%;
+}
+
+
+.logoButton {
+    display: none; // Oculta no desktop
+    background: none; // Remove fundo do botão
+    border: none; // Remove borda do botão
+    cursor: pointer; // Mantém o cursor como pointer
+}
+
+.toggleButton {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+nav {
+    @include header-align($justify: space-between, $align: center);
+    width: 30%;
+}
+
+.menu {
+    @include header-align($justify: space-between, $align: center);
+
+    ul {
+        @include header-row($justify: space-around, $font-size: 1em, $cursor: pointer, $width: 100%);
+        color: $primary-color;
+
+    }
+
+    li {
+        @include header-row($justify: space-around, $font-size: 1em, $cursor: pointer, $width: 100%);
+        display: flex;
+        justify-content: space-around;
+        color: $primary-color;
+    }
+}
+
+.link {
+    @include header-row($justify: space-around, $font-size: 1em, $cursor: pointer, $width: 100%);
+    color: $primary-color;
+
+    &:hover {
+        color: $third-color;
+        text-decoration: underline;
+    }
+}
+
+.barraDeBusca {
+    border: solid $primary-color;
+    width: 25%;
+    justify-content: space-between;
+    display: flex;
+    height: 6vh;
+    border-radius: 20px;
+    margin-right: 1%;
+    cursor: pointer;
+
+    input {
+        button {
+            background-color: transparent;
+            border: none;
+            outline: none;
+
+            &::placeholder {
+                color: $primary-color;
+                font-size: 1em;
+                text-align: center;
+            }
+        }
+    }
+}
+@media (max-width: 600px) {
+    .logoButton {
+        display: block; // Mostra o botão da logo em dispositivos móveis
+        margin-top: 10px; // Espaço acima do botão
+    }
+
+    .barraDeBusca {
+        display: none; // Esconde a barra de busca por padrão no mobile
+    }
+
+    .menu {
+        display: none; // Oculta o menu por padrão
+        // flex-direction: column; // Alinha os itens em coluna
+        background-color: #444; // Cor de fundo do menu
+        position: absolute; // Posiciona o menu corretamente
+        top: 100%; // Coloca abaixo da navbar
+        left: 0;
+        width: 100%; // Largura total
+        padding: 1rem;
+        z-index: 1;
+
+        ul {
+            flex-direction: column; // Coloca os links em coluna
+
+            li {
+                text-align: center; // Centraliza os links
+            }
+        }
+    }
+}
+@media (max-width: 600px) {
+    .logoButton {
+        display: block; // Mostra o botão da logo em dispositivos móveis
+        margin-top: 10px; // Espaço acima do botão
+    }
+
+    .barraDeBusca {
+        display: none; // Esconde a barra de busca por padrão no mobile
+    }
+
+    .menu {
+        display: none; // Oculta o menu por padrão
+        // flex-direction: column; // Alinha os itens em coluna
+        background-color: #444; // Cor de fundo do menu
+        position: absolute; // Posiciona o menu corretamente
+        top: 100%; // Coloca abaixo da navbar
+        left: 0;
+        width: 100%; // Largura total
+        padding: 1rem;
+        z-index: 1;
+        border:solid red;
+
+        ul {
+            flex-direction: column; // Coloca os links em coluna
+
+            li {
+                text-align: center; // Centraliza os links
+            }
+        }
+    }
+}

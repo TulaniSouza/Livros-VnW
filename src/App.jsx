@@ -1,15 +1,14 @@
-import Inicio from "./Components/Inicio/Inicio.jsx"
 import AppRoutes from "./Routes/AppRoutes.jsx"
-
+import "./globalStyle/globalStyle.scss"
+import Footer from "./Components/Footer/Footer.jsx"
 
 const App = () => {
 
   return (
     <>
-      <Inicio />
       <AppRoutes />
+      <Footer />
     </>
-
   )
 }
 export default App
