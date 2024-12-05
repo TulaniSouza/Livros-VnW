@@ -1,9 +1,13 @@
+@import "../../globalStyle/variables";
+
 .Box {
     width: 99vw;
     height: 80vh;
-    color: aqua;
-    background-color: aliceblue;
+    color: $Fourth-color;
+    background-color: $friday-color;
     font-size: 2rem;
-    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 
 }
