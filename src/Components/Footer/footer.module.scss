@@ -1,10 +1,12 @@
+@import"../../globalStyle/variables";
+
 .contatos{
     display:flex;
     justify-content: space-around;
-    background-color: #005695;
+    background-color: $Fourth-color;
     align-items: center;
     height: 15vh;
-    color:#fff;
+    color:$primary-color;
 
     section{
         display: flex;
@@ -17,8 +19,26 @@
 .copyright{
     background-color: #232020;
     height: 8vh;
-    color:#fff;
+    color:$primary-color;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@media(max-width:780px){
+    .contatos{
+        flex-direction: column;
+        
+        section{
+            width:60%;
+        }
+    
+    }
+    .copyright{
+        font-size:1em;
+
+        p{
+            width:60%;
+            text-align: center;
+        }
+    }
 }

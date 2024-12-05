@@ -19,19 +19,19 @@ const LivrosDoados = () => {
             showThumbs={false}
         >
             <figure className={s.boxImage}>
-                <img src={despertar} alt="Livro o Despertar da Senhorita Prim, capa azul florida e um poltrona na capa" />
+                <img src={despertar} alt="Livro o Despertar da Senhorita Prim, capa azul florida e um poltrona na capa" title="Livro o Despertar da Senhorita Prim"/>
                 <figcaption className={s.legend}>O despertar da senhorita Prim - Natalia Sanmartin</figcaption>
             </figure>
             <figure className={s.boxImage}>
-                <img src={comida} alt="Livro Comida & Cozinha- capa branca com talheres sendo uma colher com tempero natural" />
+                <img src={comida} alt="Livro Comida & Cozinha- capa branca com talheres sendo uma colher com tempero natural" title="Livro Comida & Cozinha"/>
                 <figcaption className={s.legend}>Comida & Cozinha - Harold McGee</figcaption>
             </figure>
             <figure className={s.boxImage}>
-                <img src={python} alt="Livro Python sem mistérios - capa azul e o símbolo da linguagem" />
+                <img src={python} alt="Livro Python sem mistérios - capa azul e o símbolo da linguagem" title="Livro Python sem mistérios"/>
                 <figcaption className={s.legend}>Python sem Mistérios - Joel Saade</figcaption>
             </figure>
             <figure className={s.boxImage}>
-                <img src={protagonista} alt="Protagonista - Capa avermelhada com o nome na diagonal com letra branca" />
+                <img src={protagonista} alt="Protagonista - Capa avermelhada com o nome na diagonal com letra branca" title="Protagonista" />
                 <figcaption className={s.legend}>O protagonista - Susane Andrade - Ficção</figcaption>
             </figure>
         </Carousel>

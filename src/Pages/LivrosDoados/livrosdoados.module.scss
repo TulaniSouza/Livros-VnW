@@ -1,10 +1,12 @@
+@import"../../globalStyle/variables";
+
 .container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 90vh;
+    justify-content: space-evenly;
+    height: 100%;
+    text-align: center;
     object-fit: contain;
-
 }
 
 .boxImage {
@@ -12,14 +14,29 @@
     height: 85%;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    margin:2% 35%;
-    object-fit: contain;
+    margin: 2% 35%;
 
 }
 
 .legend {
-    margin: 0;
     font-size: 1.2rem;
+    color: $Fourth-color;
+    width: 50%;
+    margin: 10% 20%;
+}
 
+@media (max-width:768px){
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height:100%;
+        flex-wrap: wrap;
+
+    }
+    .boxImage{
+        display: flex;
+        margin: 5% 20%;
+    }
 }

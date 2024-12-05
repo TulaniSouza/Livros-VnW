@@ -4,7 +4,7 @@ import s from "./querodoar.module.scss"
 
 const QueroDoar = () => {
     return (
-        <section className={s.titulo}>
+        <section className={s.container}>
             <p>
                 Por favor, preencha o formulário com suas informações e as informações do Livro
             </p>

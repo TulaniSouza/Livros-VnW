@@ -12,7 +12,7 @@ import Bug from "../Pages/Error/Bug"
 const AppRoutes = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const toggleMenu = () => { setMenuOpen(!menuOpen); };
-    console.log (menuOpen)
+
     return (
         <BrowserRouter>
             <section className={s.Container}>
@@ -32,8 +32,8 @@ const AppRoutes = () => {
 
                     </span>
                 </button>
-                <nav className={`${s.menu} ${menuOpen ? s.active : ''}`}>
-                    <ul open={menuOpen}>
+                <nav className={`${s.menu} ${menuOpen ? s.open : ''}`} role="navigation">
+                    <ul >
                         <li><Link className={s.link} to="/" onClick={() => setMenuOpen(false)}>Inicio</Link></li>
                         <li><Link className={s.link} to="/LivrosDoados" onClick={() => setMenuOpen(false)}>Livros Doados</Link></li>
                         <li><Link className={s.link} to="QueroDoar" onClick={() => setMenuOpen(false)}>Quero Doar</Link></li>
@@ -41,7 +41,7 @@ const AppRoutes = () => {
                 </nav>
 
                 <section className={s.barraDeBusca}>
-                    <input type="search" name="" id="" placeholder="O que você procura?" />
+                    <input type="search" name="search" id="search" placeholder="O que você procura?" />
                     <button><img src={lupa} alt="lupa" /></button>
                 </section>
 
@@ -57,4 +57,5 @@ const AppRoutes = () => {
 
     )
 }
+
 export default AppRoutes

@@ -26,10 +26,12 @@
         width: 90%;
         color: #005695;
     }
-    section{
+
+    section {
         display: flex;
         justify-content: space-evenly;
     }
+
     figure {
         display: flex;
         justify-content: space-evenly;
@@ -37,12 +39,55 @@
         height: 100%;
         flex-wrap: wrap;
         align-items: center;
-        border-radius:10px;
+        border-radius: 10px;
         background-color: #0157944D;
 
         figcaption {
             font-size: 1rem;
             text-align: center;
+        }
+    }
+
+}
+
+@media (max-width: 780px) {
+    .boxOne {
+        background-position: center;
+        height: 50vh;
+
+        h2 {
+            width: 55%;
+            font-size: 1.4rem;
+
+        }
+    }
+
+    .boxTwo {
+        display: flex;
+        height: 100%;
+
+        h2 {
+            font-size: 2rem;
+            color: #005695;
+            width: 92%;
+            padding: 4%;
+        }
+
+        section {
+            display: flex;
+            height: 100%;
+            justify-content: space-evenly;
+            flex-direction: column;
+            gap: 1em;
+            padding: 3%;
+            align-items: center;
+
+            figure {
+                background-color: #0157944D;
+                width: 40%;
+                display: flex;
+                border-radius: 10px;
+            }
         }
     }
 
