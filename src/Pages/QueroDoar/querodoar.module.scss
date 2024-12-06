@@ -11,7 +11,17 @@
         font-size:1.2rem;
     }
 }
+@media (max-width:780px){
+    .container{
+        width: 99.9vw;
 
+        p{
+            font-size:1.1em;
+            text-align: center;
+            width: 70%;
+        }
+    }
+}
 form{
     display: flex;
     flex-direction: column;
@@ -36,12 +46,20 @@ form{
         border: solid $Fourth-color;
         border-radius:10px;
         padding-left: 20px;
+        color:#ff6347;
 
         &::placeholder{
             color:#000;
         }
     }
 
+}
+@media (max-width:780px){
+
+    form{
+        width:90%;
+        font-size:1rem;
+    }
 }
 .button{
     width: 50%;
@@ -51,20 +69,7 @@ form{
     font-size: 1.2rem;
     padding: 0;
     cursor: pointer;
-}
-@media (max-width:780px){
-    .container{
-        width: 99.9vw;
-        border:solid;
-
-        p{
-            font-size:1.1em;
-            text-align: center;
-            width: 70%;
-        }
-    }
-    form{
-        width:90%;
-        font-size:1rem;
+    &:hover{
+        text-shadow: 2px 2px 4px #ff6347;
     }
 }

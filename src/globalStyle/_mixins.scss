@@ -1,16 +1,21 @@
-@mixin header-align($justify:space-between, $align: center){
+@mixin header-align($justify: space-between, $align: center) {
 
-  display:flex;
-  justify-content: $justify; 
-  align-items:$align;
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
 }
 
-@mixin header-row($justify:space-around, $font-size: 1em, $cursor:pointer, $width:100%){
-    display:flex;
-    justify-content:$justify ;
-    font-size: $font-size;
-    cursor:$cursor;
-    width: $width;
+@mixin header-row($justify: space-around, $font-size: 1em, $cursor: pointer, $width: 100%) {
+  display: flex;
+  justify-content: $justify ;
+  font-size: $font-size;
+  cursor: $cursor;
+  width: $width;
 
 }
 
+@mixin transparent($background:transparent, $border: none, $outline: none) {
+  background-color:$background ;
+  border: $border;
+  outline: $outline;
+}

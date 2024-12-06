@@ -8,7 +8,16 @@
     text-align: center;
     object-fit: contain;
 }
+@media (max-width:768px){
 
+    .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height:100%;
+        width: 100%;
+    }
+}
 .boxImage {
     width: 50vh;
     height: 85%;
@@ -17,7 +26,12 @@
     margin: 2% 35%;
 
 }
-
+@media (max-width:768px){
+    .boxImage{
+        margin: 5% 0%;
+        width: 100%;
+    }
+}
 .legend {
     font-size: 1.2rem;
     color: $Fourth-color;
@@ -25,18 +39,3 @@
     margin: 10% 20%;
 }
 
-@media (max-width:768px){
-
-    .container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height:100%;
-        flex-wrap: wrap;
-
-    }
-    .boxImage{
-        display: flex;
-        margin: 5% 20%;
-    }
-}

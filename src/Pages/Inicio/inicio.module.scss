@@ -15,7 +15,18 @@
         font-size: 1.3rem;
     }
 }
+@media (max-width: 780px) {
+    .boxOne {
+        background-position: center;
+        height: 50vh;
 
+        h2 {
+            width: 55%;
+            font-size: 1.4rem;
+
+        }
+    }
+}
 .boxTwo {
     display: flex;
     justify-content: space-evenly;
@@ -53,17 +64,6 @@
 }
 
 @media (max-width: 780px) {
-    .boxOne {
-        background-position: center;
-        height: 50vh;
-
-        h2 {
-            width: 55%;
-            font-size: 1.4rem;
-
-        }
-    }
-
     .boxTwo {
         display: flex;
         height: 100%;
