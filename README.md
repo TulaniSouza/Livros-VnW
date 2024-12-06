@@ -4,15 +4,10 @@
 Site desenvolvivo com o intuito de estimular e demonstrar os benefícios da leitura; e contém uma parte reservada para doações.
 
 
-## Demonstração
-
-https://cafeteria-orcin.vercel.app/
-
-
 ## 🔗 Links
-https://livros-vnw-six.vercel.app/
-https://github.com/TulaniSouza/](https://www.linkedin.com/)
-
+(https://livros-vnw-six.vercel.app/)
+(https://github.com/TulaniSouza/)
+(https://www.linkedin.com/in/tulani-souza)
 
 
 ## Stack utilizada
