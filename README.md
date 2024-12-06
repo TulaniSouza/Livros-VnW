@@ -1,8 +1,47 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Livros VnW
 
-Currently, two official plugins are available:
+Site desenvolvivo com o intuito de estimular e demonstrar os benefícios da leitura; e contém uma parte reservada para doações.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Demonstração
+
+https://cafeteria-orcin.vercel.app/
+
+
+## 🔗 Links
+https://livros-vnw-six.vercel.app/
+https://github.com/TulaniSouza/](https://www.linkedin.com/)
+
+
+
+## Stack utilizada
+
+React.js: Biblioteca JavaScript para construção de interfaces de usuário.
+SASS: Pré-processador CSS que facilita a escrita de estilos.
+Versão Mobile: O projeto é responsivo e otimizado para dispositivos móveis.
+
+
+
+
+## Uso/Exemplos
+
+```javascript
+import Component from 'my-project'
+
+const App = () => {
+
+  return (
+    <>
+      <Component />
+    </>
+  )
+}
+export default App
+```
+
+
+## Aprendizados
+
+Uso de variáveis e mixins do SASS
+
