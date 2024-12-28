@@ -14,9 +14,13 @@
   font-size: 1.2rem;
   color: $primary-color;
   width: 22%;
+
+  @include breakpoint(small) {
+    display: none;
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
   .logo {
     display: none;
   }
@@ -33,6 +37,7 @@
   .logoButton {
     display: block;
     color: $primary-color;
+    margin-left: 10%;
   }
 }
 
@@ -49,13 +54,6 @@ nav {
   li {
     @include header-row($justify: space-around, $font-size: 1em, $cursor: pointer, $width: 100%);
     color: $primary-color;
-  }
-}
-
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    width: 100%;
   }
 }
 
@@ -113,7 +111,6 @@ input {
       font-weight: 800;
       font-size: 1.2em;
       width: 45%;
-      display: flex;
       background-color: rgba(1, 35, 67, 0.919);
       z-index: 10;
 

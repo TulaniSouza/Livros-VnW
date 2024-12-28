@@ -14,8 +14,23 @@
 
 }
 
-@mixin transparent($background:transparent, $border: none, $outline: none) {
-  background-color:$background ;
+@mixin transparent($background: transparent, $border: none, $outline: none) {
+  background-color: $background ;
   border: $border;
   outline: $outline;
+}
+
+
+@mixin breakpoint($size) {
+  @if $size ==small {
+    @media (min-width: 320px) and (max-width: 428px) {
+      @content;
+    }
+  }
+
+  @else if $size ==large {
+    @media (min-width: 768px) and (max-width: 992px) {
+      @content;
+    }
+  }
 }
