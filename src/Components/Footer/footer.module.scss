@@ -1,5 +1,5 @@
-@import"../../globalStyle/variables";
-@import"../../globalStyle/mixins";
+@use "../../globalStyle/variables" as *;
+@use "../../globalStyle/mixins" as *;
 
 
 .contatos{

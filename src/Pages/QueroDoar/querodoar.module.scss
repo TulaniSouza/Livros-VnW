@@ -1,4 +1,4 @@
-@import "../../globalStyle/variables";
+@use "../../globalStyle/variables" as *;
 
 .container{
     display: flex;
