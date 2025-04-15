@@ -30,8 +30,7 @@ const QueroDoar = () => {
             autor,
             image_url
         }
-        console.log(dadosEnviar)
-        await axios.post("https://api-livros-1jof.onrender.com/livros",dadosEnviar)
+        await axios.post("https://api-livros-1jof.onrender.com/doar",dadosEnviar)
     }
 
     const puxarLivros = async () => {

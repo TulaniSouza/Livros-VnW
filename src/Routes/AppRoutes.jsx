@@ -8,10 +8,11 @@ import lupa from "../assets/lupa.png"
 import s from "./routes.module.scss"
 import Bug from "../Pages/Error/Bug"
 
-
 const AppRoutes = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const toggleMenu = () => { setMenuOpen(!menuOpen); };
+    const [valorBusca, setValorBusca] = useState("");
+
 
     return (
         <BrowserRouter>
@@ -29,7 +30,6 @@ const AppRoutes = () => {
                     <img src={logolivro} alt="logo de um livro aberto de capa azul" />
                     <span>
                         <h1>Livros Vai na Web</h1>
-
                     </span>
                 </button>
                 <nav className={`${s.menu} ${menuOpen ? s.open : ''}`} role="navigation">
@@ -41,7 +41,7 @@ const AppRoutes = () => {
                 </nav>
 
                 <section className={s.barraDeBusca}>
-                    <input type="search" name="search" id="search" placeholder="O que você procura?" />
+                    <input type="search" name="search" id="search" placeholder="O que você procura?" onChange={(e) =>{setValorBusca(e.target.value)}}/>
                     <button><img src={lupa} alt="lupa" /></button>
                 </section>
 
@@ -50,7 +50,7 @@ const AppRoutes = () => {
             <Routes>
                 <Route path="/" element={<Inicio />} />
                 <Route path="/QueroDoar" element={<QueroDoar />} />
-                <Route path="/LivrosDoados" element={<LivrosDoados />} />
+                <Route path="/LivrosDoados" element={<LivrosDoados valorBusca={valorBusca}/>} />
                 <Route path="*" element={<Bug />} />
             </Routes>
         </BrowserRouter>

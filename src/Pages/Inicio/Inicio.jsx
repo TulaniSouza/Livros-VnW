@@ -1,8 +1,10 @@
-import s from "./inicio.module.scss"
-import comunidade from "../../assets/comunidade.png"
-import leitor from "../../assets/leitor.png"
-import igualdade from "../../assets/igualdade.png"
-import balanca from "../../assets/balanca.png"
+import s from "./inicio.module.scss";
+import comunidade from "../../assets/comunidade.png";
+import leitor from "../../assets/leitor.png";
+import igualdade from "../../assets/igualdade.png";
+import balanca from "../../assets/balanca.png";
+
+
 
 const Inicio = () => {
     return (
@@ -10,6 +12,7 @@ const Inicio = () => {
             <section className={s.boxOne}>
                 <h2>VENHA FAZER PARTE DA MAIOR REDE DE DOAÇÃO </h2>
             </section>
+
             <section className={s.boxTwo}>
                 <h2>Por que devo doar?</h2>
                 <section>
@@ -31,9 +34,7 @@ const Inicio = () => {
                         <img src={balanca} alt="balança da justiça" />
                         <figcaption>Garante que todos, independentemente de sua condição, tenham oportunidades de aprendizado.</figcaption>
                     </figure>
-
                 </section>
-
             </section>
         </main>
     );

@@ -4,9 +4,9 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import s from "./livrosdoados.module.scss"
 import axios from "axios"
+import PropTypes from 'prop-types';
 
-
-const LivrosDoados = () => {
+const LivrosDoados = ({ valorBusca = "" }) => {
 
     const [livros, setLivros] = useState([])
     const puxarLivros = async () => {
@@ -17,6 +17,11 @@ const LivrosDoados = () => {
         puxarLivros();
     }, []);
 
+    const livrosFiltrados = livros.filter((item) =>{const tituloRenderizado = item.titulo.toLowerCase();
+        const buscaRenderizada = valorBusca.toLowerCase() ;
+        return tituloRenderizado.includes(buscaRenderizada);
+    });
+
     return (
         <Carousel className={s.container}
             showArrows={true}
@@ -25,8 +30,8 @@ const LivrosDoados = () => {
             interval={3000}
             showThumbs={false}
         >
-                {livros.map((item)=>(
-                    <section className={s.boxImage}>
+                {livrosFiltrados.map((item)=>(
+                    <section className={s.boxImage} key={item.id}>
                         <section>
                             <img src={item.image_url} alt={`Titulo do livro ${item.titulo}`} />
                             <section className={s.Legend}>
@@ -48,5 +53,7 @@ if (rootElement) {
 } else {
     console.error("Elemento '.LivrosDoados' não encontrado no DOM");
 }
-
+LivrosDoados.propTypes ={
+    valorBusca: PropTypes.string.isRequired
+};
 export default LivrosDoados;
